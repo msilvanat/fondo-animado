@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-size: 100%
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    color: #f35588;
+    background: #4AC29A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, 
+    Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    color: azure;
+   text-align: center;
+   background-color:rgb(10, 1, 1);
+   padding: 10px 30px;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-image: url(coding.jpg);
+    z-index: -1;
+}
+
+.slider li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+
+    animation: slider 40s linear infinite;
+    -moz-animation: slider 40s linear infinite;
+    -ms-animation: slider 40s linear infinite;
+    -o-animaton: slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+}
+
+.slider .img1 {
+    background-image: url(code2.jpg);
+    animation-delay: 5s;
+}
+
+.slider .img2 {
+    background-image: url(code3.jpg);
+    animation-delay: 10s;
+}
+
+.slider .img3 {
+    background-image: url(code4.jpg);
+    animation-delay: 15s;
+}
+
+@keyframes slider {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    10% {opacity: 1; animation-timing-function: ease-out;}
+    25% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(2);}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes slider {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    10% {opacity: 1; animation-timing-function: ease-out;}
+    25% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(2);}
+    100% {opacity: 0;}
+}
+
+@-ms-keyframes slider {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    10% {opacity: 1; animation-timing-function: ease-out;}
+    25% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(2);}
+    100% {opacity: 0;}
+}
+
+@-o-keyframes slider {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    10% {opacity: 1; animation-timing-function: ease-out;}
+    25% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(2);}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes slider {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    10% {opacity: 1; animation-timing-function: ease-out;}
+    25% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(2);}
+    100% {opacity: 0;}
+}
+
+
+/*
+.page {         
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    border: 3px solid #111;
+    min-width: 300px; 
+}
+*/
+/*
+h1 {   
+        font-size: 66px;
+        text-align: center;
+        background-color: brown;
+        padding: 10px 30px;
+        border: 3px solid white;
+}
+
+h2 {   
+    background-color: brown;
+    color: white;
+    padding: 5px;
+}
+*/
+
+/*
+p { 
+    font-family: 'Poiret One', cursive; 
+    font-size: 20px;
+    color: brown;
+    text-align: justify;
+}
+*/
+
+
+
+/* Eliminar subrayado del link, personalizar el color,
+distinto a los párrafos*/
+a:link, a:visited, a:active {      /*sil*/
+    text-decoration:none;
+    color: #cc0e74;
+    font-size: 20px;
+}
+
+
+.boton {                  
+    position: fixed;
+    bottom: 10px;
+    right: 2%; 
+    z-index: 3;}
+
+.iconos {
+    position: fixed;
+    bottom: 10px;
+    left: 2%;
+    z-index: 3;
+}
+
+.nav {
+    text-align: right;
+    font-family: 'Josefin Slab', serif;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, 
+    Opera 12+, Safari 7+ */
+    z-index: 3;
+}
+
+.menu ul {
+    margin: 0 50px 0 30px;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color:whitesmoke;
+    margin: 0px;
+    line-height: 30px;
+    padding: 6px;
+}
+  
+
+/*ver */
+.menu li:hover {
+    background-color: #222;
+    color: #333;
+}
+
+li div {
+    display: none;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+li:hover>div {
+    position: block;
+    clear: both;
+    padding: 0 10px;
+    display: inline-block;
+    padding-left: 3px;
+    font-size: 10px;
+    transition: 0.5s;
+    text-align: center;
+} 
+
+
+label {
+    margin: 0 4px 0 0;
+    font-size: 26px;
+    line-height: 50px;
+    display: none;
+    width: 24px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 520px) {    
+    .page {
+        border-radius: 0;
+    }
+
+    li:hover div {
+        position: relative;
+        clear: both;
+        padding: 0 10px;
+        display: block;
+        padding-left: 3px;
+        font-size: 10px;
+        transition: 0.5s;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        transition: ease;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        transition: ease;
+        top: 0;
+        z-index: 5;
+    }
+    label {
+        display: flex;
+        color: white;
+        padding: 0 15px 0 15px;
+    }
+    .menu li {
+        display: block;
+        border-bottom: 2px solid rgb(63, 3, 3);
+        margin: 0;
+        background-color: rgba(167, 27, 27, 0.5);
+        color: white;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+
+    .menu li:hover {
+        display: block;
+        border-bottom: 1px solid rgb(59, 1, 1);
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 12px;
+        font-weight: 600;
+        transition: all .3s;
+    }
+
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+}
+
+
